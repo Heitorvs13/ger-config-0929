@@ -1,4 +1,4 @@
-name: pipeline-de-deploy
+name: main-pipeline-deploy
 
 on: workflow_dispatch
 
