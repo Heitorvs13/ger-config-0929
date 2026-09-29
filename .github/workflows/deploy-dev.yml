@@ -19,6 +19,6 @@ jobs:
 
       - name: Deploy no Netlify
         env:
-          AUTH_TOKE: ${{ secrets.AUTH_TOKEN }}
+          AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
           PROJECT_ID: ${{ secrets.DEV_NETLIFY_ID }}
-        run: netlify deploy --site=$PROJECT_ID --auth=$AUTH_TOKE --dir="." --prod
+        run: netlify deploy --site=$PROJECT_ID --auth=$AUTH_TOKEN --dir="." --prod
